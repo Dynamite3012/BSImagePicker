@@ -46,7 +46,7 @@ final class PhotosViewController : UICollectionViewController {
     
     let settings: BSImagePickerSettings
     
-    private let doneBarButtonTitle: String = NSLocalizedString("Done", comment: "Done")
+    private let doneBarButtonTitle: String = NSLocalizedString("Готово", comment: "Готово")
     
     lazy var albumsViewController: AlbumsViewController = {
         let vc = AlbumsViewController()
@@ -194,9 +194,10 @@ final class PhotosViewController : UICollectionViewController {
     // MARK: Private helper methods
     func updateDoneButton() {
         if assetStore.assets.count > 0 {
-            doneBarButton = UIBarButtonItem(title: "\(doneBarButtonTitle) (\(assetStore.count))", style: .done, target: doneBarButton?.target, action: doneBarButton?.action)
+            doneBarButton = UIBarButtonItem(title: "\(doneBarButtonTitle) (\(assetStore.count))", style: .plain, target: doneBarButton?.target, action: doneBarButton?.action)
+            doneBarButton?.tintColor = UIColor(red: 214/255, green: 0/255, blue: 0/255, alpha: 1)
         } else {
-            doneBarButton = UIBarButtonItem(title: doneBarButtonTitle, style: .done, target: doneBarButton?.target, action: doneBarButton?.action)
+            doneBarButton = UIBarButtonItem(title: doneBarButtonTitle, style: .plain, target: doneBarButton?.target, action: doneBarButton?.action)
         }
 
         // Enabled?
