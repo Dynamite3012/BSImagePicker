@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FFD951A22F301ED00BD6B67 /* BSGridCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD951822F301ED00BD6B67 /* BSGridCollectionViewLayout.framework */; };
+		2FFD951B22F301ED00BD6B67 /* BSImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFD951922F301ED00BD6B67 /* BSImageView.framework */; };
 		53A8C2532246049E00AEE452 /* BSImagePicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550A315121D5298400AAF718 /* BSImagePicker.framework */; };
 		53A8C2542246049E00AEE452 /* BSImagePicker.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 550A315121D5298400AAF718 /* BSImagePicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		550A315621D5298400AAF718 /* BSImagePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 550A315421D5298400AAF718 /* BSImagePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -50,8 +52,6 @@
 		55BCF8DE21D52C1000386752 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF8CC21D52C1000386752 /* PhotosViewController.swift */; };
 		55BCF8DF21D52C1000386752 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF8CD21D52C1000386752 /* AlbumsViewController.swift */; };
 		55BCF8E021D52C1000386752 /* ZoomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF8CE21D52C1000386752 /* ZoomAnimator.swift */; };
-		55BCF8E421D52CAE00386752 /* BSImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BCF8E221D52CAE00386752 /* BSImageView.framework */; };
-		55BCF8E521D52CAE00386752 /* BSGridCollectionViewLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BCF8E321D52CAE00386752 /* BSGridCollectionViewLayout.framework */; };
 		55BCF8EF21D52F3400386752 /* ImagePickerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF8EB21D52F3400386752 /* ImagePickerViewTests.swift */; };
 		55BCF8F021D52F3400386752 /* ComposedDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF8EC21D52F3400386752 /* ComposedDataSourceTests.swift */; };
 		55BCF8F121D52F3400386752 /* CameraDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55BCF8ED21D52F3400386752 /* CameraDataSourceTests.swift */; };
@@ -110,6 +110,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FFD951422F301D100BD6B67 /* BSGridCollectionViewLayout.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = BSGridCollectionViewLayout.framework.dSYM; path = Carthage/Build/iOS/BSGridCollectionViewLayout.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		2FFD951522F301D100BD6B67 /* BSImageView.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = BSImageView.framework.dSYM; path = Carthage/Build/iOS/BSImageView.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		2FFD951822F301ED00BD6B67 /* BSGridCollectionViewLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSGridCollectionViewLayout.framework; path = Carthage/Build/iOS/BSGridCollectionViewLayout.framework; sourceTree = SOURCE_ROOT; };
+		2FFD951922F301ED00BD6B67 /* BSImageView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BSImageView.framework; path = Carthage/Build/iOS/BSImageView.framework; sourceTree = SOURCE_ROOT; };
 		550A315121D5298400AAF718 /* BSImagePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BSImagePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		550A315421D5298400AAF718 /* BSImagePicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BSImagePicker.h; sourceTree = "<group>"; };
 		550A315521D5298400AAF718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -170,8 +174,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55BCF8E521D52CAE00386752 /* BSGridCollectionViewLayout.framework in Frameworks */,
-				55BCF8E421D52CAE00386752 /* BSImageView.framework in Frameworks */,
+				2FFD951A22F301ED00BD6B67 /* BSGridCollectionViewLayout.framework in Frameworks */,
+				2FFD951B22F301ED00BD6B67 /* BSImageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +357,10 @@
 		55BCF8E121D52C7200386752 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FFD951822F301ED00BD6B67 /* BSGridCollectionViewLayout.framework */,
+				2FFD951922F301ED00BD6B67 /* BSImageView.framework */,
+				2FFD951422F301D100BD6B67 /* BSGridCollectionViewLayout.framework.dSYM */,
+				2FFD951522F301D100BD6B67 /* BSImageView.framework.dSYM */,
 				55BCF8E321D52CAE00386752 /* BSGridCollectionViewLayout.framework */,
 				55BCF8E221D52CAE00386752 /* BSImageView.framework */,
 			);
@@ -782,6 +790,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -811,6 +820,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";

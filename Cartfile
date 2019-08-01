@@ -1,2 +1,2 @@
 github "mikaoj/BSImageView" ~> 1.0
-github "mikaoj/BSGridCollectionViewLayout" ~> 1.2
+git "https://github.com/Dynamite3012/BSGridCollectionViewLayout.git" "master"
